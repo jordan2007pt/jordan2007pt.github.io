@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Administrador de Contenido</h1>
+    <form id="login-form">
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+    <div id="admin-panel" style="display: none;">
+        <h2>Editar Contenido</h2>
+        <textarea id="content-editor" rows="10" cols="50"></textarea>
+        <button id="save-content">Guardar Contenido</button>
+        <input type="file" id="image-upload" accept="image/*">
+        <button id="upload-image">Subir Imagen</button>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
